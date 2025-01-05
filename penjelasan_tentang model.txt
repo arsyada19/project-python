@@ -1,0 +1,7 @@
+Di bawah ini adalah penjelasan singkat tentang struktur dan konten dari model tersebut:
+
+<CoordinateSystem> { Z-up }: Ini adalah bagian dari header yang menentukan sistem koordinat yang digunakan dalam file .egg. Dalam kasus ini, sistem koordinat yang digunakan adalah dengan sumbu Z menunjuk ke atas.
+<Comment> { "Egg laid by Chicken for Blender v1.0" }: Ini adalah komentar yang memberikan informasi tentang sumber file .egg, dalam hal ini, dibuat oleh plugin atau skrip bernama "Chicken" untuk Blender dengan versi 1.0.
+<Group> Cube { ... }: Ini adalah grup yang berisi definisi dari kubus yang disebut "Cube". Isi dari grup ini terdiri dari definisi vertex (titik sudut), vertex pool (daftar semua titik sudut), dan definisi poligon (wajah kubus).
+<VertexPool> Cube { ... }: Ini adalah daftar vertex yang digunakan dalam model. Setiap vertex diberi nomor unik dan koordinat x, y, z yang menunjukkan posisi relatifnya dalam ruang 3D. Juga disertakan koordinat UV yang menentukan pemetaan tekstur untuk setiap vertex.
+<Polygon> { ... }: Ini adalah definisi dari wajah kubus. Setiap poligon terdiri dari normal (arah atau orientasi wajah), dan referensi ke vertex-vertex yang membentuk wajah tersebut. Penggunaan <Ref> { Cube } menunjukkan bahwa poligon tersebut menggunakan vertex dari vertex pool yang bernama "Cube".
